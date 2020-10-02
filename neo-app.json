@@ -7,6 +7,13 @@
 			"name": "nodeSRV"
 		},
 		"description": "nodeSRV Destinations"
+	},{
+		"path": "/destinations/nodeSRV",
+		"target": {
+			"type": "destination",
+			"name": "nodeSRV"
+		},
+		"description": "nodeSRV Destinations"
 	}, {
 		"path": "/resources",
 		"target": {
