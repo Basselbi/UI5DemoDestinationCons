@@ -1,13 +1,13 @@
 {
 	"welcomeFile": "/webapp/index.html",
 	"routes": [{
-		"path": "/destinations/nodeSRV",
+		"path": "/destinations/BYD",
 		"target": {
 			"type": "destination",
-			"name": "nodeSRV"
+			"name": "BYD"
 		},
-		"description": "nodeSRV Destinations"
-	},{
+		"description": "oData Destinations"
+	}, {
 		"path": "/destinations/nodeSRV",
 		"target": {
 			"type": "destination",

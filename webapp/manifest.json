@@ -7,6 +7,16 @@
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
+		"dataSources": {
+			"Service": {
+				"uri": "/destinations/BYD/sap/byd/odata/cust/v1/odata_project/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"annotations": []
+				}
+			}
+		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
 		"sourceTemplate": {
@@ -14,16 +24,7 @@
 			"version": "1.40.12"
 		}
 	},
-	"dataSources": {
-		"Service": {
-			"uri": "/destinations/BYD/sap/byd/odata/cust/v1/odata_project/",
-			"type": "OData",
-			"settings": {
-				"odataVersion": "2.0",
-				"annotations": []
-			}
-		}
-	},
+
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
