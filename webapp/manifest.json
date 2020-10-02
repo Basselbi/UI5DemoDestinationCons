@@ -14,6 +14,16 @@
 			"version": "1.40.12"
 		}
 	},
+	"dataSources": {
+		"Service": {
+			"uri": "/destinations/BYD/sap/byd/odata/cust/v1/odata_project/",
+			"type": "OData",
+			"settings": {
+				"odataVersion": "2.0",
+				"annotations": []
+			}
+		}
+	},
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -51,6 +61,17 @@
 			"cozy": true
 		},
 		"models": {
+			"Service": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Request",
+					"useBatch": false
+				},
+				"dataSource": "Service",
+				"preload": true
+			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
@@ -59,11 +80,9 @@
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		},
 		"routing": {
 			"config": {
@@ -75,15 +94,13 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [
-				{
-					"name": "RouteView1",
-					"pattern": "RouteView1",
-					"target": [
-						"TargetView1"
-					]
-				}
-			],
+			"routes": [{
+				"name": "RouteView1",
+				"pattern": "RouteView1",
+				"target": [
+					"TargetView1"
+				]
+			}],
 			"targets": {
 				"TargetView1": {
 					"viewType": "XML",
